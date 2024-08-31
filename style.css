@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --padding-xml:2vmax;
+    --padding-min:4vmax;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ::-webkit-progress-bar{
+    width: 100%;
+    color: red;
+    background-color: black;
+} */
+
+#main{
+    background-color:#333;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    padding: var(--padding-xml);
+    width: 550px;
+    height: 450px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to bottom, orange,white);
+}
+
+/* Changing the default colors of the inputs */
+
+input[type='range']{
+    appearance: none;
+    background-color: transparent;
+    height: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+input[type='range']::-webkit-slider-thumb{
+    appearance: none;
+    height: 1.5rem;
+    width: 0.75rem;
+    background-color: red;
+}
+
+/* #checkbox{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid red;
+    color: #fff;
+
+} */
+
+.password{
+    width: 100%;
+    height: 50px;
+    background-color: khaki;
+    padding: 10px var(--padding-xml);
+    text-align: center;
+    color: red;
+}
+.conditions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.conditions .checkbox-conditions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generate{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 0;
+    border: none;
+    font-weight: 700;
+    font-size: 2.5vh;
+    background-color: orange;
+}
