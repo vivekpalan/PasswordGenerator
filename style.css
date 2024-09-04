@@ -25,12 +25,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 .container{
+    padding: 20px;
     position: relative;
     padding: var(--padding-xml);
     width: 550px;
-    height: 450px;
+    height: 400px;
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -38,8 +40,15 @@
     align-items: center;
     background: linear-gradient(to bottom, orange,white);
 }
+.container h2{
+    font-size: 18px;
+}
 
 /* Changing the default colors of the inputs */
+
+input[type="checkbox"]{
+    accent-color: red;
+}
 
 input[type='range']{
     appearance: none;
@@ -74,7 +83,8 @@ input[type='range']::-webkit-slider-thumb{
     color: red;
 }
 .conditions{
-    width: 100%;
+    margin-top: 15px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -95,4 +105,17 @@ input[type='range']::-webkit-slider-thumb{
     font-weight: 700;
     font-size: 2.5vh;
     background-color: orange;
+}
+
+@media screen and (min-width:600px) {
+    .container h2{
+        font-size: 24px;
+    }
+    .container{
+        height: 450px;
+    }
+    .conditions{
+        width: 100%;
+    }
+    
 }
